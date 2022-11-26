@@ -1,0 +1,44 @@
+.Header{
+    padding: 19px 0;
+}
+.HeaderContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.HeaderLogo{
+    max-width: 250px;
+    width: 100%;
+}
+.HeaderList{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 268px;
+    width: 100%;
+}
+.HeaderItem{
+    font-size: 16px;
+    line-height: 24px;
+}
+.HeaderButtons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 250px;
+    width: 100%;
+}
+.HeaderLogIn{
+    font-size: 16px;
+    color: #274B90;
+    font-weight: 600;
+}
+.HeaderRegistr{
+    font-size: 16px;
+    padding: 11px 24px;
+    font-weight: 600;
+    color: #FFFFFF;
+    background-color: #305DB4;
+    border-radius: 8px;
+
+}

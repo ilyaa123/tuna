@@ -1,0 +1,82 @@
+.Main{
+    width: 100%;
+    height: calc(100vh - 94px);
+}
+.MainContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+.MainTitle{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 130%;
+    color: #274B90;
+    margin-bottom: 40px;
+}
+.MainTitleColor{
+    display: block;
+    color: #0C8771;
+}
+.MainSubTitle{
+    font-size: 16px;
+    line-height: 130%;    
+    color: #505864;
+    max-width: 430px;
+    margin-bottom: 50px;
+}
+.MainForm{
+    position: relative;
+    padding: 10px 24px 10px 72px;
+    border: 1px solid #C7D6E3;
+    box-shadow: 0px 4px 24px rgba(27, 29, 33, 0.15);
+    border-radius: 16px;
+}
+.MainSvg{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 24px;
+}
+.MainInput{
+    font-size: 14px;
+    line-height: 130%;
+    letter-spacing: 0.01em;
+    color: #8593A7;
+    margin-right: 30px;
+}
+.MainCity{
+    position: relative;
+    display: inline;
+}
+.MainLocation{
+    padding: 9px 16px 9px 52px;
+    background-color: #E7ECF2;
+    border-radius: 16px;
+    font-size: 12px;
+    line-height: 130%;
+    letter-spacing: 0.01em;
+    color: #505864;    
+    margin-right: 18px;
+}
+.MainCitySvg{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 16px;
+}
+.MainSearc{
+    padding: 9px 36px;
+    background-color: #305DB4;
+    border-radius: 16px;
+    font-size: 14px;
+    line-height: 130%;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;    
+}
+.MainImage{
+    max-width: 450px;
+}

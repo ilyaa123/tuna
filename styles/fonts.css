@@ -1,0 +1,27 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap'); */
+
+/* @font-face {
+    font-family: 'OpenSans';
+    src: url('../public/fonts/OpenSans-Regular.ttf') format('ttf');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../public/fonts/OpenSans-SemiBold.ttf') format('ttf');
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'OpenSans';
+    src: url('/../../public/fonts/OpenSans-Bold.ttf') format('ttf');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Rubik';
+    src: url('../public/fonts/Rubik-SemiBold.ttf') format('ttf');
+    font-weight: 600;
+} */
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    line-height: 24px;
+}
