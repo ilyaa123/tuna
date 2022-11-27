@@ -1,0 +1,47 @@
+.Project{
+    padding: 60px 0;
+}
+.ProjectTitle{
+    font-family: 'Rubik';
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 130%;
+    color: #1B1D21;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.ProjectList{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.ProjectItem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.ProjectItemImage{
+    margin-bottom: 24px;
+}
+.ProjectItemTitle{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 130%;
+    text-align: center;
+    color: #1B1D21;
+    margin-bottom: 18px;
+}
+.ProjectText{
+    max-width: 260px;
+    font-size: 16px;
+    line-height: 130%;
+    text-align: center;
+    color: #1B1D21;    
+}
+.MailingInput{
+    font-size: 14px;
+    line-height: 130%;
+    letter-spacing: 0.01em;
+    color: #8593A7;    
+}

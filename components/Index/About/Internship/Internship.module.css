@@ -1,0 +1,39 @@
+.Internship{
+    padding: 60px 0;
+}
+.InternshipTitle{
+    font-family: 'Rubik';
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 130%;
+    color: #1B1D21;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.InternshipContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.InternshipList{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+}
+.InternshipItem{
+    margin-bottom: 20px;
+    max-width: 410px;
+}
+.InternshipItemTitle{
+    margin-bottom: 18px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 130%;
+    color: #1B1D21;
+}
+.InternshipItemText{
+    font-size: 16px;
+    line-height: 130%;
+    color: #505864;
+}

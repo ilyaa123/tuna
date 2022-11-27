@@ -28,7 +28,7 @@ export const Main:FC = () => {
                         </form>
                     </div>
                     <div className={style.MainImage}>
-                        <Image style={{ width: '100%', height: 'auto' }} src="/image/image2.png" width={446} height={328} alt="Картинка на главном экране" />
+                        <Image style={{ width: 'auto', height: '100%' }} src="/image/image2.png" width={446} height={328} alt="Картинка на главном экране" />
                     </div>
                 </div>
             </Container>

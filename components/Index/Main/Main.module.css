@@ -1,6 +1,6 @@
 .Main{
     width: 100%;
-    height: calc(100vh - 94px);
+    height: calc(100vh - 82px);
 }
 .MainContainer{
     display: flex;
