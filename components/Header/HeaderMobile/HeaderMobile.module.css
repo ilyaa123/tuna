@@ -1,35 +1,6 @@
-.Header{
-    padding: 19px 0;
-    position: relative;
-    z-index: 2;
-    background-color: #FFFFFF;
-}
-.HeaderContainer{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.HeaderLogo{
-    max-width: 250px;
-    width: 100%;
-}
-.HeaderList{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 268px;
-    width: 100%;
-}
 .HeaderItem{
     font-size: 16px;
     line-height: 24px;
-}
-.HeaderButtons{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 250px;
-    width: 100%;
 }
 .HeaderLogIn{
     font-size: 16px;
@@ -59,6 +30,7 @@
     width: 100%;
     height: 2px;
     background-color: #505864;
+    transition: 0.36s ease-in-out;
 }
 .HeaderMobileBtn::after{
     top: 0;
@@ -75,21 +47,24 @@
     height: 2px;
     background-color: #505864;
     opacity: 1;
+    transition: 0.36s ease-in-out;
 }
 .HeaderMobileList{
     position: absolute;
-    top: -300px;
-    left: 0;
+    top: 68px;
+    right: -130%;
+    z-index: -1;
     width: 100%;
     padding: 24px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #FFFFFF;
+    transition: 0.36s ease-in-out;
 }
 .HeaderMobileList > .HeaderItem{
     text-align: center;
-    margin-bottom: 12px;
+    margin-bottom: 25px;
 }
 .HeaderMobileList > .HeaderLogIn{
     width: 300px;
@@ -97,42 +72,25 @@
 .HeaderMobileList > .HeaderRegistr{
     margin-left: 0;
     margin-bottom: 24px;
-    margin-top: 12px;
     width: 100%;
 }
-.Overlay{
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: #000000;
+.HeaderMobileBtn_Active > .HeaderMobileBtnStroke{
     opacity: 0;
-    z-index: -1;
-    transition: 0.36s ease-in-out;
 }
-.Overlay_Active{
-    opacity: .3;
-    z-index: 1;
+.HeaderMobileBtn_Active::after{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
 }
-@media (max-width: 960px) {
-    .HeaderButtons{
-        justify-content: flex-end;
-    }
-    .HeaderRegistr{
-        margin-left: 24px;
-    }
-    .HeaderLogo{
-        width: auto;
-    }
+.HeaderMobileBtn_Active::before{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+.HeaderMobileList_Active{
+    right: 0;
 }
 @media (max-width: 760px){
-    .HeaderList{
-        display: none;
-    }
-    .HeaderButtons{
-        display: none;
-    }
     .HeaderMobile{
         display: block;
     }

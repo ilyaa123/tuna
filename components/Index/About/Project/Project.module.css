@@ -33,15 +33,41 @@
     margin-bottom: 18px;
 }
 .ProjectText{
-    max-width: 260px;
+    font-weight: 400;
     font-size: 16px;
-    line-height: 130%;
+    line-height: 160%;
     text-align: center;
-    color: #1B1D21;    
+    color: #505864;
+    max-width: 260px;
 }
 .MailingInput{
     font-size: 14px;
     line-height: 130%;
     letter-spacing: 0.01em;
     color: #8593A7;    
+}
+@media (max-width: 1110px) {
+    .ProjectList{
+        flex-direction: column;
+        align-items: center;
+    }
+    .ProjectItem{
+        margin-bottom: 40px;
+    }
+}
+@media (max-width: 652px){
+    .ProjectTitle{
+        font-size: 24px;
+        margin-bottom: 48px;
+    }
+    .ProjectItemTitle{
+        font-size: 16px;
+    }
+    .ProjectText{
+        font-size: 14px;
+        max-width: 200px;
+    }
+    .ProjectItemImage{
+        width: 100%;
+    }
 }

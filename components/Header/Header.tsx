@@ -1,12 +1,21 @@
+import classNames from "classnames";
 import Image from "next/image";
-import { FC } from "react";
+import { FC, useState } from "react";
 import { Container } from "../Container/Container";
 
 import style from './Header.module.css';
+import { HeaderMobile } from "./HeaderMobile/HeaderMobile";
 
 export const Header:FC = () => {
 
+    const [navigation, setNavigation] = useState<Boolean>(false);
+
+    const handleOnClick = () => {
+        setNavigation(!navigation)
+    }
+
     return(
+        <>
         <div className={style.Header}>
             <Container>
                 <div className={style.HeaderContainer}>
@@ -28,8 +37,11 @@ export const Header:FC = () => {
                         <button className={style.HeaderLogIn}>Войти</button>
                         <button className={style.HeaderRegistr}>Регистрация</button>
                     </div>
+                    <HeaderMobile navigation={navigation} setNavigation={setNavigation} />
                 </div>
             </Container>
         </div>
+        <div onClick={handleOnClick} className={classNames(style.Overlay, {[style.Overlay_Active] : navigation})} />
+        </>
     )
 }

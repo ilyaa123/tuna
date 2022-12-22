@@ -1,7 +1,12 @@
 .Mailing{
-    padding: 100px 0;
+    padding: 100px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .MailingContainer{
+    max-width: 784px;
+    width: 100%;
     padding: 36px 0;
     background-color: #274B90;
     border-radius: 16px;
@@ -47,4 +52,41 @@
     color: #FFFFFF;
     background-color: #305DB4;
     border-radius: 16px;    
+}
+@media (max-width: 652px){
+    .Mailing{
+        padding: 40px 0 0;
+    }
+    .MailingContainer{
+        padding: 64px 0 84px;
+    }
+    .MailingTitle{
+        font-size: 24px;
+    }
+    .MailingContainer{
+        border-radius: 0;
+    }
+    .MailingForm{
+        flex-direction: column;
+        background-color: inherit;
+        border: none;
+        box-shadow: none;
+    }
+    .MailingInput{
+        width: 100%;
+        padding: 13px 12px;
+        background: #FFFFFF;
+        border-radius: 8px;
+        margin-bottom: 16px;
+    }
+    .MailingBtn{
+        width: 100%;
+        background: #E1EBFF;
+        border-radius: 8px;
+        color: #274B90;
+        padding: 13px 0;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 130%;
+    }
 }

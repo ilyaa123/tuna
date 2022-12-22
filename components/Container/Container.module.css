@@ -1,6 +1,7 @@
 .Container{
-    max-width: 1130px;
-    padding: 0 5px;
+    max-width: 1106px;
+    padding: 0 24px;
     margin: 0 auto;
     height: 100%;
+    background-color: inherit;
 }
