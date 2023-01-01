@@ -5,20 +5,14 @@ import style from './HeaderMobile.module.css';
 
 interface IHeaderMob{
     navigation: Boolean,
-    setNavigation: (prev: boolean) => void
+    handleOnRegistration: () => void,
+    handleOnAutorization: () => void
 }
 
-export const HeaderMobile:FC<IHeaderMob> = ({navigation, setNavigation}) => {
-
-    const handleOnClick = () => {
-        setNavigation(!navigation)
-    }
+export const HeaderMobile:FC<IHeaderMob> = ({navigation, handleOnRegistration, handleOnAutorization}) => {
 
     return (
         <>
-            <div className={style.HeaderMobile}>
-                <button onClick={handleOnClick} className={classNames(style.HeaderMobileBtn, {[style.HeaderMobileBtn_Active] : navigation})}><p className={style.HeaderMobileBtnStroke}></p></button>
-            </div>
             <ul className={classNames(style.HeaderMobileList, {[style.HeaderMobileList_Active] : navigation})}>
                 <li className={style.HeaderItem}>
                     <p className={style.HeaderP}>Проекты</p>
@@ -29,8 +23,8 @@ export const HeaderMobile:FC<IHeaderMob> = ({navigation, setNavigation}) => {
                 <li className={style.HeaderItem}>
                     <p className={style.HeaderP}>О нас</p>
                 </li>
-                <button className={style.HeaderRegistr}>Регистрация</button>
-                <button className={style.HeaderLogIn}>Войти</button>
+                <button onClick={handleOnRegistration} className={style.HeaderRegistr}>Регистрация</button>
+                <button onClick={handleOnAutorization} className={style.HeaderLogIn}>Войти</button>
             </ul>
         </>
     )

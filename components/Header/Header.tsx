@@ -1,5 +1,7 @@
 import classNames from "classnames";
 import Image from "next/image";
+import Link from "next/link";
+import Router from "next/router";
 import { FC, useState } from "react";
 import { Container } from "../Container/Container";
 
@@ -14,13 +16,23 @@ export const Header:FC = () => {
         setNavigation(!navigation)
     }
 
+    const handleOnRegistration = () => {
+        Router.push('/auth/registration')
+    }
+
+    const handleOnAutorization = () => {
+        Router.push('/auth/autorization')
+    }
+
     return(
         <>
         <div className={style.Header}>
             <Container>
                 <div className={style.HeaderContainer}>
                     <div className={style.HeaderLogo}>
-                        <Image src='/image/logo_demo.png' alt="Логотип" width={92} height={24} />
+                        <Link href={'/'}>
+                            <Image src='/image/logo_demo.png' alt="Логотип" width={92} height={24} />
+                        </Link>
                     </div>
                     <ul className={style.HeaderList}>
                         <li className={style.HeaderItem}>
@@ -34,13 +46,16 @@ export const Header:FC = () => {
                         </li>
                     </ul>
                     <div className={style.HeaderButtons}>
-                        <button className={style.HeaderLogIn}>Войти</button>
-                        <button className={style.HeaderRegistr}>Регистрация</button>
+                        <button onClick={handleOnAutorization} className={style.HeaderLogIn}>Войти</button>
+                        <button onClick={handleOnRegistration} className={style.HeaderRegistr}>Регистрация</button>
                     </div>
-                    <HeaderMobile navigation={navigation} setNavigation={setNavigation} />
+                    <div className={style.HeaderMobile}>
+                        <button onClick={handleOnClick} className={classNames(style.HeaderMobileBtn, {[style.HeaderMobileBtn_Active] : navigation})}><p className={style.HeaderMobileBtnStroke}></p></button>
+                    </div>
                 </div>
             </Container>
         </div>
+        <HeaderMobile navigation={navigation} handleOnRegistration={handleOnRegistration} handleOnAutorization={handleOnAutorization} />
         <div onClick={handleOnClick} className={classNames(style.Overlay, {[style.Overlay_Active] : navigation})} />
         </>
     )
